@@ -9,11 +9,18 @@
 <body>
   <section>
     <h1>Responsive Web Design</h1>
-    <p>In the year of our <a link href="lorde.jpg">Lorde</a> 2017, more than half of all traffic on the web is coming from mobile devices. What does that mean for web design? It must be <em>responsive</em>. </p>
+    <p>In the year of our <a href="lorde.jpg">Lorde</a> 2017, more than half of all traffic on the web is coming from mobile devices. What does that mean for web design? It must be <em>responsive</em>. </p>
      
-    <h2>The Basics</h2>
-    <p>Responsive design is the purposeful construction of sites that will conform and optimize to a variety of displays and devices. 
+    <h2>What does it mean to make a responsive site?</h2>
+    <p>Responsive design is the purposeful construction of sites that will conform and optimize to a variety of displays and devices. It is composed of three key elements:</p> 
+     <ul>  
+      <li>flexible, grid layout</li>
+      <li>flexible images and media</li>
+      <li>media queries</li>
+    </ul>
+    <p>At the core of desinging a responsive site is relative sizing. Text, elements, media - relative units are key to creating a site  that will display effectively on a desktop monitor, phone, tablet, or even the browser of a gaming console. Responsive design solves the problem of creating a cohesive user experience across all devices. 
     </p>
+   
   </section>
     <form>
     <h2>Tell Me About Your Site</h2>
@@ -32,17 +39,31 @@
 
    
       <label>How many unique visitors does your site get per day? 
-        <input type="text" name="issues" placeholder="50, 100...none = [">
+        <input type="number" name="issues" placeholder="50, 100...0 = [">
       </label>
       
       <label>What features/elements does your site currently contain?
-        <input type="radio" name="Blog" required value="Yes"> Yes
-        <input type="radio" name="Social Media" required value="No"> No
+        <input type="checkbox" name="Blog" required value="Blog">Blog
+        <input type="checkbox" name="Social Media" required value="Social Media Integration">Social Media Integration
+        <input type="checkbox" name="Shopping Cart" required value="Shopping Cart">Shopping Cart
+        <input type="checkbox" name="Photo Gallery" required value="Photo Gallery">Photo Gallery
+        <input type="checkbox" name="Web Forms" required value="Web Forms">Web Forms
+        <input type="checkbox" name="Email" required value="Email Collection and Marketing Capability">Email Collection and Marketing Capability
       </label>
       
       <label>What additionally functionality or tools would you like added to your site? <br><br>
-        <textarea name="tools" maxlength="100" rows="10%" cols="50%;">
+        <textarea name="tools" maxlength="100" rows="10" cols="50;">
         </textarea>
       </label>
+      
+      <label>Please enter your email and I will reach out within two business days.   
+        <input type="text" name="contact" placeholder="youremaildawg@gmail.com" required>
+      </label>
+      
+      <label>
+      <input type="submit">
+      </label>
+    </form>
+      
 </body>
 </html>
